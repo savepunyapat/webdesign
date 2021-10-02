@@ -1,0 +1,342 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*
+    เป็นการใช้universal selector
+    เป็นการเซ็ตค่าทั้งหมดจากselectorตัวนี้
+    padding 0ให้ขอบของตัวelementไม่เว้นช่องว่าง
+    margin 0ไม่เว้นช่องว่างระหว่างelement
+    กำหนดfontเป็น arial
+    box-sizingเป็นการกำหนดกล่องcontentและแสดงผล
+    */
+}
+html {
+    scroll-behavior: smooth;
+    /*
+    กำหนด เป็น attribute selector ที่ชิ่อhtml
+    ทำให้ปุ่มที่คลิกไปเลื่อนไปตามcontentได้อย่างลื่นไหล*/
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    /*
+    กำหนดclass navbar
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    justify-content: center เป็นการจัดการcontentให้อยู่ตรงกลาง
+    align-item จัดการcomponentในelementให้อยู่ตรงกลาง
+    background-colorกำหนดสีพื้นหลัง
+    position sticky กำหนดตัวnav barให้อยู่ข้างบนของจอตลอด
+    top 0คือเซ็ตให้elementชิดขอบ
+    */
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px
+    /*
+    เป็นการใช้contextual selector
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    list-style noneกำหนดตัวลักษณะelementที่เป็นปุ่ม
+    margin กำหนดความห่างของelement
+    */
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /*
+    เป็นการใช้contextual selector
+    กำหนดfontเป็น century
+    font sizeกำหนดขนาด
+    font weightกำหนดรูปแบบของตัวหนังสือเช่นตัวหนา
+    */
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+    /*
+    เป็นการใช้contextual selector
+    text-decoration ไม่ให้ตัวปุ่มมีเส้นข้างล่างหรือมีการตกแต่งใดๆ
+    colorกำหนดสี
+    paddingกำหนดpadding ข้างบนและข้างล่างเป็น8px ข้างๆเป็น10px
+    transitionกำหนดtransitionของทุกตัว กำหนดเวลาของtransitionกำหนด
+    รูปแบบ
+    */
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 10px white;
+    /*
+    เป็นการใช้contextual selectorและpseudo classes
+    background color กำหนดสีพื้นหลัง
+    colorกำหนดสีตัวหนังสือ
+    box shadow กำหนดเงาของปุ่มข้างบนเพื่อตกแต่ง
+    */
+}
+
+.heading1 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: century;
+    /*
+    กำหนดclass heading1
+    text align กำหนดตัวอักษรให้อยู่ตรงกลาง
+    padding กำหนดpaddingทั้งหมด10px
+    colorกำหนดสีของตัวอักษร
+    font family กำหนดfontเป็นcentury
+    */
+}
+.heading2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: century;
+    /*
+    กำหนดclass heading2
+    text align กำหนดตัวอักษรให้อยู่ตรงกลาง
+    padding กำหนดpaddingทั้งหมด10px
+    colorกำหนดสีของตัวอักษร
+    font family กำหนดfontเป็นcentury
+    */
+}
+#movie1 {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(0,0,0,0.8);  
+    padding: 20px;
+    /*
+    กำหนดid movie1
+    flex directionเป็นการกำหนดให้เรียงเป็นหลัก
+    box-sizingเป็นการกำหนดกล่องcontentและแสดงผล
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    background color กำหนดสี
+    padding กำหนดpaddingทั้งหมด20px
+    */
+}
+#movie1 section p {
+    color: rgb(206, 203, 203);
+    /*
+    colorกำหนดสีตัวอักษร
+    เป็นการใช้ Contextual Selectors*/
+}
+#movie2 {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 50px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    
+    /*
+    กำหนดid movie2
+    flex directionเป็นการกำหนดให้เรียงเป็นหลัก
+    box-sizingเป็นการกำหนดกล่องcontentและแสดงผล
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    background color กำหนดสี
+    margin bottomกำหนัดความห่างของelementกับelementข้างล่าง50px
+    padding กำหนดpaddingทั้งหมด30px*/
+    
+}
+#movie2 section p {
+    color: rgb(206, 203, 203);
+    /*
+    colorกำหนดสีตัวอักษร
+    เป็นการใช้ Contextual Selectors
+    */
+}
+
+#embed {
+    width: 480px;
+    height: 360px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    /*
+    กำหนดลักษณะของid embed
+    width ความกว้าง 480px
+    height ความสูง 360px
+    padding ข้างล่างคือ20 px
+    ข้างบนคือ10px
+    border radius คือกนดความโค้งของขอบembed 20px
+    */
+}
+#moviebox1 {
+    display: flex;  
+    /*display flexเป็นการเรียงcontentบนหน้าเว็บ*/
+}
+#moviebox1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../img/el_camin.jpg') no-repeat center/cover;
+    height: 510px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    /*
+    เป็นการใช้Pseudo-classes
+    กำหนดตัวcontentใน pseudo class
+    positionคือกำหนดให้อย่างตำแหน่งนั้นๆ
+    top right กำหนดมให้เป็นตำแหน่งเริ่มต้น
+    backgroundเป็นการกำหนดรูปพื้นหลัง
+    widthกำหนดความกว้าง
+    heightกำหนดความสูง
+    z-index เป็นการกำหนดlayerของelementที่ทับซ้อนกันอยู่ให้อยู่ข้างล่าง
+    opacity ความโปร่งแสง
+
+    */
+}
+#moviebox2 {
+    display: flex;
+    /*display flexเป็นการเรียงcontentบนหน้าเว็บ*/
+}
+#moviebox2::before {
+    content: "";
+    position: absolute;
+    top: 510px;
+    right: 0;
+    background: url('../img/nothinghills.jfif') no-repeat center/cover;
+    height: 467px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    /*
+    เป็นการใช้Pseudo-classes
+    กำหนดตัวcontentใน pseudo class
+    positionคือกำหนดให้อย่างตำแหน่งนั้นๆ
+    top right กำหนดมให้เป็นตำแหน่งเริ่มต้น
+    backgroundเป็นการกำหนดรูปพื้นหลัง
+    widthกำหนดความกว้าง
+    heightกำหนดความสูง
+    z-index เป็นการกำหนดlayerของelementที่ทับซ้อนกันอยู่ให้อยู่ข้างล่าง
+    opacity ความโปร่งแสง*/
+}
+#opinion {
+    font-family: Century;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 50px;
+    /*
+    font family กำหนดfontเป็นcentury
+    font sizeกำหนดขนาด
+    */
+}
+img {
+    width: 600px;
+    height: 360px;
+    padding:20px;
+    /*
+    widthกำหนดความกว้างของ img markup
+    heightกำหนดความสูง
+    paddingจากขอบของelementเป็น20px
+    */
+}
+#reviewbox1 {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    margin: 10px;
+    display: flex; 
+    /*
+    กำหนด id reviewbox1
+    background colorกำหนดสีพื้นหลัง
+    border radius ความโค้งของelement
+    margin ความห่างของelement 10px
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    */
+}
+#reviewbox2 {
+    background-color: #fcd5ce;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex; 
+    /*
+    กำหนด id reviewbox2
+    background colorกำหนดสีพื้นหลัง
+    border radius ความโค้งของelement
+    margin ความห่างของelement 10px
+    display flexเป็นการเรียงcontentบนหน้าเว็บ
+    */
+}
+#preview1 {
+    padding: 50px;
+    color: rgb(216, 214, 214);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*
+    กำหนด id preview1
+    paddingจากขอบของelementเป็น50px
+    colorกำหนดสี
+    font familyกำหนดฟ้อนเป็น georgia
+    */
+}
+#preview2 {
+    padding: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*
+    กำหนด id preview2
+    paddingจากขอบของelementเป็น50px
+    font familyกำหนดฟ้อนเป็น georgia
+    */
+}
+h2 {
+    font-size: 1em;
+    /*
+    กำหนดขนาดตัวอักษรของ h2เป็น attribute selector
+    */
+}
+p {
+    margin-right: 0px;
+    padding-top: 5px;
+    padding-left: 20px;
+    /*
+    กำหนดpaddingของ pเป็น attribute selector
+    */
+}
+p::first-line {
+    font-size: 1.4em;
+    /*
+    psuedo first lineเป็นการกำหนดคุณสมบัติของบรรทัดเรก
+    กำนหดขนาดfont
+    */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /*
+    เป็นการกำหนดpseudo elementของscrollbarข้างๆจอ
+    กำหนดให้กว้าง10px
+
+    */
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+    /*
+    กำหนัดความโค้งมนของตัวเลื่อน
+    box shadowกำหนดเงา
+    */
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #264653;
+    /*
+    กำหนดลักษณะของตังเลื่อน
+    background colorกำหนดสี
+
+    */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #13a787;
+    /*background colorกำหนดสี*/
+}

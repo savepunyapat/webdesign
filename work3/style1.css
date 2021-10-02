@@ -1,0 +1,51 @@
+h1 {
+    color: red;
+}
+#h2{
+    color: seagreen;
+}
+h1.green {
+    color: sienna;
+}
+p {
+    text-align: center;
+    background-color: teal;
+}
+p.gold { 
+    background-color: gold;
+
+}
+
+a {
+
+}
+a:link {
+    color: green;
+    border: solid tomato;
+}
+a:hover {
+    color: red;
+    background-color: khaki;
+    
+}
+a:visited {
+    color: indianred;
+}
+a:active {
+    background-color: #000000;
+    color: white;
+}
+p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+p::first-line {
+    color: royalblue;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gold;
+    font-size: 32px;
+    
+}
+/* css formater alt+shift+F */

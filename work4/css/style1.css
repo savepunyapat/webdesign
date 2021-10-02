@@ -1,0 +1,102 @@
+h1 ~ ul {
+    color: red;
+}
+div + p {
+    color: aqua;
+}
+
+[alt] {
+    
+}
+[alt="cs"] { 
+    
+}
+[alt~="cs"] {
+    
+}
+[alt^="cs"] {
+    
+}
+[alt|="cs"] {
+    
+}
+[alt$="cs"] {
+    
+}
+[alt*="cs"] {
+    
+}
+/*
+input[type="text"]:enabled {
+    background-color: red;
+}
+input[type="text"]:disabled {
+    background-color: green;
+}
+
+p:first-of-type {
+    background-color: hotpink;
+}
+h1:first-of-type {
+    background-color: indigo;
+}
+p:last-child {
+    background-color: lightblue;
+}
+h1:last-child {
+    background-color: lightsalmon;
+}*/
+
+p {
+    background-color: rgba ( 255, 255, 0, 0.5);
+}
+div.shadow{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    box-shadow: 5px 5px 5px red;
+}
+div.gradient {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+    background: radial-gradient(cyan,purple);
+    
+
+}
+div.transition {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 1s;
+}
+div.transition:hover {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    transition: 1s;
+}
+.button {
+    background-color: red;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+.button{
+    background-color: teal;
+}
+.button{
+    background-color: tomato;
+}
+
+div.box {
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid;
+    width: 100px;
+    height: 300px;
+}

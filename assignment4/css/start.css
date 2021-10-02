@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /*fontอันไหนก็ได้ที่เป็นsan serif*/
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/web2.png);
+    background-size: cover;
+    background-position: center;
+    /*background image กำหนดเป็นgradientแบบเส้นตรง
+    background sizeกำหนดให้คลุมทั้งหมด
+    background positionกำหนดให้คลุมทั้งหมด*/
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    /*กำหนดให้cursorเป็นรูปชี้*/
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    /*
+    ่justify contentกำหนดรูปแบบการแสดงเนื้อหา*/
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    /*
+    list-styleกำหนดรูปแบบlist*/
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    /*
+    text decorationการตกแต่งตัวอักษร
+    text transformกำหนดรูปแบบชื่อตัวใหญ่ตัวเล็ก
+    */
+}
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    /*เป็นการใช้Pseudo-classes
+    กำหนดตัวcontentใน pseudo class
+    positionคือกำหนดให้อย่างตำแหน่งนั้นๆ
+    left กำหนดมให้เป็นตำแหน่งเริ่มต้น
+    backgroundเป็นการกำหนดสีพื้นหลัง
+    widthกำหนดความกว้าง
+    heightกำหนดความสูง
+    z-index เป็นการกำหนดlayerของelementที่ทับซ้อนกันอยู่ให้อยู่ข้างล่าง
+    */
+}
+.navbar ul li:hover:after {
+    width: 100%;
+    /* widthกำหนดความกว้าง*/
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    /*
+    widthกำหนดความกว้าง
+    positionกำหนดตำแหน่ง
+    topกำหนดตำแหน่งบนสุด
+    transformการเปลี่ยนตำแหน่ง
+    text-alignจัดวางตัวอักษร
+    */
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    /*
+    กำหนดfont size
+    กำหนดmargin*/
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    /*
+    กำหนดmargin
+    font weightกำหนดรูปแบบของตัวหนังสือเช่นตัวหนา
+    line heightกำหนดควาามสูงบรรทัด
+    */
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /*
+    widthกำหนดความกว้าง
+    paddingกำหนดpadding
+    text-alignจัดวางตัวอักษร
+    กำหนดmargin
+    border radius คือกนดความโค้ง
+    font weightกำหนดรูปแบบของตัวหนังสือเช่นตัวหนา
+    borderกำหนดขอบbackground กำหนดtransparent
+    cursorกำหนดให้เป็นรูปชี้
+    positionกำหนดตำแหน่ง
+    overflowเนื้อหาที่เกินออกมาจะถูกซ่อน
+    */
+}
+a {
+    text-decoration: none;
+    /*การตกแต่งตัวอักษร*/
+}
+a:visited {
+    color: white;
+    /*สีของตัวอักษร*/
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    /*background กำหนดพื้นหลัง
+    heightความสูง
+    border radius คือกนดความโค้ง
+    topกำหนดตำแหน่งบนสุด
+    bottomกำหนดตำแหน่งล่างสุด
+    z-index เป็นการกำหนดlayerของelementที่ทับซ้อนกันอยู่ให้อยู่ข้างล่าง
+    transitionกำหนดtransitionของทุกตัว กำหนดเวลาของtransitionกำหนด
+    */
+}
+button:hover span{
+    width: 100%;
+    /*กำหนดความกว้าง*/
+}
+button:hover {
+    border: none;
+    /*
+    กำหนดไม่เอาขอบ*/
+}
+p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    /*font sizeกำหนดขนาด
+    font weightกำหนดรูปแบบของตัวหนังสือเช่นตัวหนา*/
+}
+

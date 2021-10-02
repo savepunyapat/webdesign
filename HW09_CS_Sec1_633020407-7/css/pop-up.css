@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #f0f4fb;
+}
+.banner {
+    padding-top: 80px;
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+    padding-left: 30px;
+}
+.container {
+    display: grid;
+    /*ให้ในcontainerแสดงเป็นgrid layout
+    grid template-columsจะใช้กำหนดว่าจะแสดงแถวละเท่าไร
+    ที่ใช้auto fillเพราะresponsiveมากกว่า
+    gapคือช่างว่าระหว่างgridแต่ละอัน
+    */
+    grid-template-columns: repeat(auto-fill, minmax(265px,400px));
+    gap: 4rem;
+}
+.arc-img {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.arc-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.arc-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.arc-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+.arc-content {
+    padding: 2rem;
+}
+.arc-content .card-category {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+}
+.arc-content .card-title {
+    margin: 1rem 0;
+    color: #22447b;
+}
+.arc-content .card-art {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background: royalblue;
+    height: 100px;
+}
+nav img {
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+    width: 80px;
+    height: 80px;
+    transition: 500ms;
+    cursor: pointer;
+    
+}
+nav img:hover {
+    opacity: 0.5;
+}
+nav p {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 31px;
+    color: white;
+    
+    font-size: 1.5em;
+}

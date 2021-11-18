@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <link rel="stylesheet" href="../css/form.css">
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <fieldset>
+             <legend>Employment Application</legend>
+             <div class="row">
+                <div class="column">
+                    <div class="selector">
+                        <p>Which position are you applying for?</p>
+                        <select name="pets" id="pet-select">
+                            <option value=""></option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                            <option value="spider">Spider</option>
+                            <option value="goldfish">Goldfish</option>
+                        </select><br>
+                    </div>
+                    
+                    <p>Are you willing to relocate?</p>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">Yes</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">No</label><br>
+                    <br>
+                    <p>When can you start?</p>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <label for="fname">Portfolio Web Site</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="http://" size="30"> <br><br>
+                    <label for="myfile">Attach a Copy of Your Resume</label><br>
+                    <input type="file" id="myfile" name="myfile"><br><br></div>
+                <div class="column">
+                    <h3>Your Contact information</h3>
+                    <label for="fname">Name</label><br>
+                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname"><br>
+                    <p>First    &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    Last</p>
+                    <br>
+                    <label for="fname">Email Address</label><br>
+                    <input type="text" id="fname" name="fname" size="50"><br><br>
+
+                    <label for="fname">Phone</label><br>
+                    <input type="text" id="fname" name="fname" size="3">
+                    <label for="fname">-</label>
+                    <input type="text" id="fname" name="fname" size="3">
+                    <label for="fname">-</label>
+                    <input type="text" id="fname" name="fname" size="3"><br>
+                    <p>###&emsp;&emsp;&emsp;###&emsp;&emsp;&emsp;###</p>
+                    <input type="submit">
+                </div>
+              </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    padding-bottom: 10px;
+}
+span {
+    color: red;
+}
+.selector {
+    background-color: yellow;
+    width: 40%;
+    height: 60px;
+    padding-left: 10px;
+}
+.selector select{
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)"
+    href="../css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)"
+    href="../css/phone.css">
+</head>
+    
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#css">Font-sizing</a></li>
+            <li><a href="#fontrec">Font recommend</a></li>
+            <li><a href="#topfont">Top recommend</a></li>
+        </ul>
+    </nav>
+
+    <section id ="home">
+        <div class="main">
+            <h1 class="headings">CSS Font-Sizing: a Definitive Guide</h1>
+            <button class="btn">
+                <a href="#css">
+                    Read more!
+                </a>
+                
+            </button>
+        </div>
+    </section>
+
+    <section id = "css">
+        <h1 class="headings">CSS Font-Sizing: a Definitive Guide </h1>
+        <div id="pic">
+            <div id ="intro">
+                <p id="p1">
+                    Craig Buckler http://www.sitepoint.com/css-font-sizing-tutorial/<br>
+                    <br>
+                    Font sizing in CSS sounds as though it should be easy. Until you try it. Many developers use the force; they tinker with the font-size property until it looks right only to find it’s different in another browser. A little understanding can go a long way…<br>
+                    
+                </p>
+                <p>
+                    The font-size Property<br>
+                    The font-size property can be set for any HTML tag (even if it would not normally contain textual content like br). It can be assigned a variety of absolute, relative, or length size parameters.
+                    An element will inherit the font-size of its parent unless you override it. This is especially important when you specify relative sizes.
+                </p>
+                <p>
+                    Absolute Font Sizing Keywords<br>
+                    Several absolute font-sizing keywords are available. The font size is determined from a browser preset and the element will not inherit its parent’s size.
+                </p>
+                <h3 id="xx-smal">· font-size: xx-small;</h3>
+                <h3 id="x-small">· font-size: x-small;</h3>
+                <h3 id="small">· font-size: small;</h3>
+                <h3 id="medium">· font-size: medium;</h3>
+                <h3 id="large">· font-size: large;</h3>
+                <h3 id="x-large">· font-size: x-large;</h3>
+                <h3 id="xx-large">· font-size: xx-large;</h3>
+                <p>
+                    Relative Font Sizing Keywords<br>
+                    For example, if the parent has a font size of ‘medium’, a value of ‘larger’ will set the element to ‘large’. Other font units are normally altered by a factor of around 1.2 but, again, there is no standard and browser results will differ.
+                    <br>
+                    Two relative font-sizing keywords are available. The font is sized according to its parent element:<br>
+                    <h3 id="smaller">· font-size: x-large;</h3>
+                    <h3 id="larger">· font-size: xx-large;</h3>
+                    
+                </p>
+                <p>
+                    Absolute Lengths<br>
+
+                    The font-size property can be assigned an absolute length:<br>
+
+                    · <b>mm</b>: millimeters, e.g. 10mm.<br>
+
+                    · <b>cm</b>: centimeters, e.g. 1cm ( = 10mm).<br>
+
+                    · <b>in</b>: inches, e.g. 0.39in ( ~= 10mm).<br>
+
+                    · <b>pt</b>: point, where 1pt is generally assumed to be 1/72 inch e.g. 12pt.<br>
+
+                    · <b>pc</b>: pica, where 1pc is 12pt<br>
+
+                    · <b>px</b>: pixel, e.g. 14px.<br>
+                    <br>
+                    In general, there are issues with all these measurement units. Millimeters, centimeters and inches are inaccurate for a screen-based medium. Points and picas are unreliable since systems can use different dpisettings. Pixel appears to be the most suitable, but it can lead to accessibility issues because the text cannot be resized in IE.
+                </p>
+                <p>
+                    Relative Lengths<br>
+
+                    The font-size property can be assigned a unit that it relative to its parent’s font size:<br>
+
+                    · <b>em</b>: 1em is equivalent to the current font size, so 2em is twice as large.<br>
+
+                    · <b>%</b>: 100% is equivalent to the current font size, so 200% is twice as large.<br>
+
+                    · <b>ex</b>: 1ex is equivalent to the height of the letter ‘x’ in the current font.<br><br>
+
+                    Few developers use ‘ex’, but it can be useful in some situations where you need fine-grained font sizes, e.g. 1ex rather than 0.525em.<br>
+
+                    Percentage and ‘em’ sizes are equivalent, e.g. 50% = 0.5em, 100% = 1em, 120% = 1.2em, etc. Some browsers exhibit subtle differences but it’s rarely a major problem. If you want to save every byte, you could choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em is shorter than 100%.
+                </p>
+                <p>
+                    Text Sizing and Page Zooming<br>
+
+                    This is where additional complexity creeps in. Most browsers allow the user to:<br>
+
+                    1. increase or decrease the base text size (image dimensions are not changed)<br>
+
+                    2. zoom the page in or out so all the text and graphics change accordingly, or<br>
+
+                    3. allow both text sizing and page zooming.<br>
+
+                    Just to complicate matters further, Internet Explorer does not allow text resizing on elements which have a font size defined in pixels (px).<br>
+
+                    If you’re a designer moving to the web from a print background, it’s disconcerting to give the user that much power. Your design could be ruined by a user zooming in 200% but reducing the text size to 50%. And — no — there is nothing you can do to prevent it. Nor should you.
+                    <br>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id = 'fontrec'>
+        <h1 class="headings">CSS Font Sizing Recommendations</h1>
+        <div class="textbox">
+            <p>
+                The general consensus is that ‘em’ or ‘%’ is the best solution in most situations.<br>
+                Fonts can be finely scaled relative to each other and browser text sizing is supported. I would also recommend using a percentagefont-size on the body tag; it results in better text-sizing in some older browsers.<br>
+                There are a couple of other recommendations I would suggest when you’re developing a site:<br>
+                1. reset the font size and page zoom to their default values in all your browsers before testing (it’s caught me out a few times!)<br>
+                2. try reasonable combinations of text sizing and page zooming in a variety of browsers to ensure the text remains readable.<br><br>
+            </p>
+            <img src="../img/11.jpg" alt="p1">
+            <img src="../img/12.jpg" alt="p2">
+            <p>
+                Web font embedding services<br>
+                Google Web Fonts (GWF) or Typekit are systems which allow the use of fonts hosted on their servers. GWF is free to use, does not require you to have an account, and has no limit on traffic or domains unlike Typekit. Typekit sets the cost of the service according to the number of domains in which the font is used, or the site’s monthly traffic. One of the most valued characteristics of GWF is the option to download a desktop version of the fonts for use in the project design phase.
+                Implementation<br>
+                It really is quick and simple:<br>
+                1. Choose a font. You can add it to your collection or use “quick-use” to generate the code and options for that font.<br>
+                2. Copy and paste the code generated into your Tag head<br>
+                
+                
+            </p>
+            <img src="../img/23.png" alt="" id="img1">
+            <p>
+                3. The font is now accessible in your CSS code<br>
+            </p>
+            <img src="../img/24.png" alt="" id="img2">
+            <p>
+                Here you can consult a extended manual for styles, script subsets, and using multiple fonts.<br>
+                Top recommended fonts from Google Web Fonts<br>
+                You will find many unfavorable reviews about the quality of GWF’s fonts and the amateur nature of many typefaces. We must remember that Google Web Fonts is a collaborative open source project, but many people think still there should be a higher level of quality control.
+                <br>
+            </p>
+
+        </div>
+    </section>
+    <section id="topfont">
+        <h1 class="headings">Top recommended fonts from Google Web Fonts</h1>
+        <p>
+            You will find many unfavorable reviews about the quality of GWF’s fonts and the amateur nature of many typefaces. We must remember that Google Web Fonts is a collaborative open source project, but many people think still there should be a higher level of quality control.
+        </p>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/13.jpg" alt="">
+            </a>
+            
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/14.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/15.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/16.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/17.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/18.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/19.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/20.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/21.jpg" alt="">
+            </a>
+        </section>
+        <section class="boxx">
+            <h1>
+                Open Sans
+            </h1>
+            <a href="https://fonts.google.com/">
+                <img src="../img/22.jpg" alt="">
+            </a>
+        </section>
+    </section>
+</body>
+
+</html>

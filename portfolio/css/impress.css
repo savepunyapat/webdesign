@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Mohave', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    transition: 500ms;
+}
+.logo:hover {
+    opacity: 0.5;
+}
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 8px;
+}
+.logo a img{
+    width: 100%;
+    height: 7vh;
+}
+a {
+    float: left;
+    width: 5%;
+    font-size: 30px;
+    padding-right: 5px;
+}
+.bio {
+    font-size: 1.25rem;
+    text-align: justify;
+    padding-right: 10vh;
+    padding-left: 10vh;
+}
+.containerx a {
+    padding-top: 25px;
+    color: white;
+    text-decoration: none;
+}
+.containerx {
+    background: url('../img/Black-Galaxy-Wallpapers-HD.jpg') center center fixed no-repeat;
+    height: 10vh;
+}
+.container {
+    text-align: center;
+}
+.container h2 {
+    padding: 4vh;
+}
+.container p {
+    padding: 5vh;
+    
+    text-align: center;
+}
+#backbtn {
+    padding-left: 1em;
+}
+#web-banner {
+    max-width: 100%;
+    height: auto;
+    width: 150vh;
+}
+#web-logo {
+    max-width: 100%;
+    height: auto;
+    width: 30vh;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+footer p {
+    padding-top: 3vh;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    /*
+    เป็นการกำหนดpseudo elementของscrollbarข้างๆจอ
+    กำหนดให้กว้าง10px
+
+    */
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+    
+    /*
+    กำหนัดความโค้งมนของตัวเลื่อน
+    box shadowกำหนดเงา
+    */
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    /*
+    กำหนดลักษณะของตังเลื่อน
+    background colorกำหนดสี
+
+    */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #181818;
+    
+    /*background colorกำหนดสี*/
+}
